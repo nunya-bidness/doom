@@ -96,7 +96,7 @@ function(a,b){jQuery.fn[b]=function(d){return d?this.bind(b,d):this.trigger(b)}}
     Dosbox.prototype.downloadScript = function() {
       this.module.setStatus('Downloading js-dos');
       this.ui.updateMessage('Downloading js-dos');
-      return new Dosbox.Xhr('https://github.com/nunya-bidness/doom/blob/ef6ae9038f8f6df862274ffdfab1a5975c28dec5/js-dos-v3.js', {
+      return new Dosbox.Xhr('https://github.com/nunya-bidness/doom/raw/refs/heads/main/js-dos-v3.js', {
         success: (function(_this) {
           return function(script) {
             var func;
