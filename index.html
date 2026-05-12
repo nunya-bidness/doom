@@ -1,18 +1,11 @@
 <html lang="en-us">
 
   <head>
-  <meta name="google-site-verification" content="dRFt1DjMaz4QI-gPjzUmoztVbRdcXL8jltdpfQp6Klo" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-  <meta name="description" content="Play DOOM via JS-DOS.">
-  <meta name="keywords" content="DOOM,pc,game,javscript">
-  <title>Play DOOM via JS-DOS</title>
+  <title>nunya bidness</title>
   <meta property="og:title" content='DOOM &middot; js-dos' />
-  <meta property="og:description" content="Play in the DOOM in browser." />
+  <meta property="og:description" content="nunya bidness" />
   <meta property="og:type" content="game" />
-  <meta property="og:url" content="https://thedoggybrad.github.io/doom_on_js-dos/" />
-  <meta property="og:image" content="https://thedoggybrad.github.io/doom_on_js-dos/DOOM.png" />
+  <meta property="og:image" content="https://github.com/nunya-bidness/doom/blob/f90d8dbe413fa6196e8dda6637299d2c4d73ab8b/DOOM.png" />
 
   <!-- CSS -->
   <link rel="stylesheet" href="app.css">
@@ -21,7 +14,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="manifest" href="site.webmanifest">
     
-  <script type="text/javascript" src="https://thedoggybrad.github.io/doom_on_js-dos/js-dos-api.js"></script>
+  <script type="text/javascript" src="https://github.com/nunya-bidness/doom/blob/f90d8dbe413fa6196e8dda6637299d2c4d73ab8b/js-dos-api.js"></script>
 
 
   <body style="background-color:#121212; color: white">
@@ -29,9 +22,6 @@
     a:link {color:white}
 </style>
 <center>
-<h1>Play DOOM via JS-DOS</h1>
-<footer>©TheDoggyBrad Software Lab. All Rights Reserved.</footer>
-<h3><a href="https://github.com/thedoggybrad/doom_on_js-dos/blob/main/MANUAL.MD">User Manual</a></h3>
 <div style="margin-top:20px;" id="DOOM" class="dosbox-default"></div>
 <div style="margin-top:0px;" id="DOOM" class="dosbox-default"></div>
 <p><br /><a id="fullscreen_DOOM" href="javascript: void 0;" class="fa-solid fa-expand"></a>&nbsp;&nbsp;FULLSCREEN</p>
@@ -40,7 +30,7 @@
   var dosbox_DOOM = new Dosbox({
     id: "DOOM",
     onload: function (dosbox) {
-      dosbox_DOOM.run("https://thedoggybrad.github.io/doom_on_js-dos/DOOM-@evilution.zip", "./DOOM/DOOM.EXE");
+      dosbox_DOOM.run("https://github.com/nunya-bidness/doom/blame/2ffb55bc8155988b9bf2d2428242b5c151b95cab/DOOM-%40evilution.zip", "./DOOM/DOOM.EXE");
     },
     onrun: function (dosbox, app) {
       console.log("App '" + app + "' is runned");
