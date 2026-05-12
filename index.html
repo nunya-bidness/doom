@@ -7,9 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <title>DOOM</title>
   <meta property="og:title" content='DOOM &middot; js-dos' />
-  <meta property="og:description" content="Play in the DOOM in browser." />
   <meta property="og:type" content="game" />
-  <meta property="og:url" content="https://thedoggybrad.github.io/doom_on_js-dos/" />
   <meta property="og:image" content="https://github.com/nunya-bidness/doom/blob/7a68bf094d54c14e38bdae48b22846a1aab2cd70/DOOM.png" />
 
   <!-- CSS -->
@@ -24,13 +22,13 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="manifest" href="site.webmanifest">
     
-  <script type="https://github.com/nunya-bidness/doom/blob/7a68bf094d54c14e38bdae48b22846a1aab2cd70/js-dos-api.js"></script>
+  <script type="https://github.com/nunya-bidness/doom/raw/refs/heads/main/js-dos-api.js"></script>
 
 
   <body style="background-color:#121212; color: white">
    
 <style>
-    #DOOM > .dosbox-container { width: 640px; height: 400px; }
+    #DOOM > .dosbox-container { width: 1366px; height: 768px; }
     #DOOM > .dosbox-container > .dosbox-overlay { background: url("https://github.com/nunya-bidness/doom/blob/7a68bf094d54c14e38bdae48b22846a1aab2cd70/DOOM.png"); }
     #DOOM > .dosbox-container > .dosbox-overlay > .dosbox-start {
         border-radius: 17px 17px 17px 17px;
@@ -54,7 +52,7 @@
   var dosbox_DOOM = new Dosbox({
     id: "DOOM",
     onload: function (dosbox) {
-      dosbox_DOOM.run("https://github.com/nunya-bidness/doom/blob/7a68bf094d54c14e38bdae48b22846a1aab2cd70/DOOM-%40evilution.zip", "./DOOM/DOOM.EXE");
+      dosbox_DOOM.run("https://github.com/nunya-bidness/doom/raw/refs/heads/main/DOOM-@evilution.zip", "./DOOM/DOOM.EXE");
     },
     onrun: function (dosbox, app) {
       console.log("App '" + app + "' is runned");
