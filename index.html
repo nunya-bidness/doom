@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <title>Play Doom with JS-DOS</title>
 <!-- Load js-dos-api.js from your GitHub repo via jsDelivr CDN -->
-<script src="https://nunya-bidness.github.io/doom/js-dos-api.js"></script>
+<script src="https://nunya-bidness.github.io/html-doom/js-dos-api.js"></script>
 </head>
 <body>
 <div id="doomContainer"  style="width: 800px; height: 600px; border: 1px solid #000;"></div>
@@ -13,7 +13,7 @@
     var dosbox = new Dosbox({
       id: "doomContainer",
       onload: function(dos) {
-        dos.run("https://nunya-bidness.github.io/doom/DOOM-@evilution.zip", "./DOOM/DOOM.EXE");
+        dos.run("https://nunya-bidness.github.io/html-doom/DOOM-@evilution.zip", "./DOOM/DOOM.EXE");
       }
     });
   });
